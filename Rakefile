@@ -38,7 +38,7 @@ begin
     gemspec.homepage = "http://github.com/experteer/rack_detect_robots"
     gemspec.summary = "Rack Middleware for detecting robots"
     gemspec.add_dependency('rack', '>= 0.9.1')
-
+    gemspec.files = Dir.glob('lib/**/*.rb')
   end
 rescue LoadError
   warn "no jeweler so no gemspec tasks"

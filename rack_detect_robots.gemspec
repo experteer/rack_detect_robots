@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.authors = ["Peter Schrammel"]
   s.date = %q{2011-09-05}
   s.files = [
-    "VERSION"
+    "lib/rack_detect_robots.rb"
   ]
   s.homepage = %q{http://github.com/experteer/rack_detect_robots}
   s.require_paths = ["lib"]
@@ -24,21 +24,27 @@ Gem::Specification.new do |s|
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<rack_detect_robots>, [">= 0"])
       s.add_development_dependency(%q<rake>, [">= 0"])
-      s.add_development_dependency(%q<jeweler>, [">= 0"])
-      s.add_development_dependency(%q<rspec>, [">= 0"])
+      s.add_development_dependency(%q<rake>, [">= 0"])
+      s.add_development_dependency(%q<rake>, [">= 0"])
+      s.add_development_dependency(%q<jeweler>, ["~> 1.6"])
+      s.add_development_dependency(%q<rspec>, ["~> 2.6"])
       s.add_runtime_dependency(%q<rack>, [">= 0.9.1"])
     else
       s.add_dependency(%q<rack_detect_robots>, [">= 0"])
       s.add_dependency(%q<rake>, [">= 0"])
-      s.add_dependency(%q<jeweler>, [">= 0"])
-      s.add_dependency(%q<rspec>, [">= 0"])
+      s.add_dependency(%q<rake>, [">= 0"])
+      s.add_dependency(%q<rake>, [">= 0"])
+      s.add_dependency(%q<jeweler>, ["~> 1.6"])
+      s.add_dependency(%q<rspec>, ["~> 2.6"])
       s.add_dependency(%q<rack>, [">= 0.9.1"])
     end
   else
     s.add_dependency(%q<rack_detect_robots>, [">= 0"])
     s.add_dependency(%q<rake>, [">= 0"])
-    s.add_dependency(%q<jeweler>, [">= 0"])
-    s.add_dependency(%q<rspec>, [">= 0"])
+    s.add_dependency(%q<rake>, [">= 0"])
+    s.add_dependency(%q<rake>, [">= 0"])
+    s.add_dependency(%q<jeweler>, ["~> 1.6"])
+    s.add_dependency(%q<rspec>, ["~> 2.6"])
     s.add_dependency(%q<rack>, [">= 0.9.1"])
   end
 end

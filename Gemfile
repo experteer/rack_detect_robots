@@ -4,6 +4,6 @@ gemspec
 
 group :development do
   gem "rake"
-  gem "jeweler"
-  gem "rspec"
+  gem "jeweler","~> 1.6"
+  gem "rspec","~> 2.6"
 end
