@@ -19,6 +19,7 @@ begin
 rescue LoadError
   warn "no rspec no spec tasks"
 end
+
 require 'rake/rdoctask'
 Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""

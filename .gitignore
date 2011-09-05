@@ -1,0 +1,6 @@
+.bundle
+.rvmrc
+.idea
+
+rdoc
+Gemfile.lock
