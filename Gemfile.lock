@@ -1,9 +1,8 @@
 PATH
   remote: .
   specs:
-    rack_detect_robots (0.0.1)
+    rack_detect_robots (0.0.2)
       rack (>= 0.9.1)
-      rack_detect_robots
 
 GEM
   remote: http://rubygems.org/
