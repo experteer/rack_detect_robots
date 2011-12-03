@@ -16,10 +16,10 @@ describe Rack::DetectRobots do
       midleware.call(bot_env)
     end
     it "should detect robot" do
-      bot_env[:rack_detect_robots].should be_robot
+      bot_env['rack_detect_robots'].should be_robot
     end
     it "should set robot_name" do
-      bot_env[:rack_detect_robots].robot_name.should == "googlebot"
+      bot_env['rack_detect_robots'].robot_name.should == "googlebot"
     end
   end
   describe "without a match" do
@@ -27,10 +27,10 @@ describe Rack::DetectRobots do
       midleware.call(no_bot_env)
     end
     it "should not detect robot" do
-      no_bot_env[:rack_detect_robots].should_not be_robot
+      no_bot_env['rack_detect_robots'].should_not be_robot
     end
     it "should not set robot_name" do
-      no_bot_env[:rack_detect_robots].robot_name.should be_nil
+      no_bot_env['rack_detect_robots'].robot_name.should be_nil
     end
   end
 end

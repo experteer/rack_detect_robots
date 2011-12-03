@@ -11,10 +11,10 @@ Ad it to your Rack stack:
 use Rack::DetectRobots
 
 In your application_controller.rb you can detect a robot with
-env[:rack_detect_robots].robot?
+env['rack_detect_robots'].robot?
 
 and get it's matched name with
-env[:rack_detect_robots].robot_name
+env['rack_detect_robots'].robot_name
 
 That's it.
 

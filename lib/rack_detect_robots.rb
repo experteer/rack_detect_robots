@@ -43,7 +43,7 @@ module Rack
     end
     
     def call(env)
-      env[:rack_detect_robots]=test_for_robots(env)
+      env['rack_detect_robots']=test_for_robots(env)
       @app.call(env)
     end
     private
