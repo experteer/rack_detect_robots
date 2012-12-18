@@ -4,26 +4,33 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{rack_detect_robots}
+  s.name = "rack_detect_robots"
   s.version = "0.0.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Peter Schrammel"]
-  s.date = %q{2012-12-18}
+  s.date = "2012-12-18"
+  s.extra_rdoc_files = [
+    "README.txt"
+  ]
   s.files = [
     "lib/rack_detect_robots.rb"
   ]
-  s.homepage = %q{http://github.com/experteer/rack_detect_robots}
+  s.homepage = "http://github.com/experteer/rack_detect_robots"
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.6.2}
-  s.summary = %q{Rack Middleware for detecting robots}
+  s.rubygems_version = "1.8.10"
+  s.summary = "Rack Middleware for detecting robots"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+      s.add_runtime_dependency(%q<rack_detect_robots>, [">= 0"])
       s.add_development_dependency(%q<rake>, [">= 0"])
       s.add_development_dependency(%q<rake>, [">= 0"])
+      s.add_development_dependency(%q<rake>, [">= 0"])
+      s.add_development_dependency(%q<jeweler>, ["~> 1.6"])
+      s.add_development_dependency(%q<rspec>, ["~> 2.6"])
       s.add_development_dependency(%q<rake>, [">= 0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.6"])
       s.add_development_dependency(%q<rspec>, ["~> 2.6"])
@@ -41,12 +48,18 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<rake>, [">= 0"])
       s.add_dependency(%q<jeweler>, ["~> 1.6"])
       s.add_dependency(%q<rspec>, ["~> 2.6"])
+      s.add_dependency(%q<rake>, [">= 0"])
+      s.add_dependency(%q<jeweler>, ["~> 1.6"])
+      s.add_dependency(%q<rspec>, ["~> 2.6"])
       s.add_dependency(%q<rack>, [">= 0.9.1"])
     end
   else
     s.add_dependency(%q<rack_detect_robots>, [">= 0"])
     s.add_dependency(%q<rake>, [">= 0"])
     s.add_dependency(%q<rake>, [">= 0"])
+    s.add_dependency(%q<rake>, [">= 0"])
+    s.add_dependency(%q<jeweler>, ["~> 1.6"])
+    s.add_dependency(%q<rspec>, ["~> 2.6"])
     s.add_dependency(%q<rake>, [">= 0"])
     s.add_dependency(%q<jeweler>, ["~> 1.6"])
     s.add_dependency(%q<rspec>, ["~> 2.6"])
