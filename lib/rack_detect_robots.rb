@@ -19,6 +19,8 @@ module Rack
         'yahoo! de slurp',
         'googlebot',
         'bingbot',
+        'aol',
+        'scoutjet',
         'ask jeeves',
         'yanga worldsearch bot',
         'gigaboti',
